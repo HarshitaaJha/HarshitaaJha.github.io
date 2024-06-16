@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url("https://picsum.photos/seed/5468468/600/600");
+    /* 545453 */
+    /* 5468468 */
+    /* background-color: rgb(19, 19, 19); */
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+    height: 50px;
+}
+
+nav span.title {
+    font-size: 1.6rem;
+    font-family: "Azeret Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all 0.5s ease;
+}
+
+nav span.title:hover {
+    color: greenyellow;
+    font-size: 1.8rem;
+}
+
+nav span.menu {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav span.menu li {
+    list-style-type: none;
+    padding: 20px;
+    font-family: "Azeret Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 0.95rem;
+    font-weight: 400;
+}
+
+@media (max-width: 540px) {
+    nav span.title {
+        font-size: 1rem;
+    }
+
+    nav span.menu li {
+        font-size: 0.8rem;
+        padding: 10px;
+    }
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s ease;
+}
+
+
+a:hover {
+    color: greenyellow;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 540px) {
+    nav span.title:hover {
+        font-size: 1.2rem;
+    }
+
+    a:hover {
+        font-size: 1.05rem;
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    margin: 20px;
+    padding: 10px;
+    background-color: rgba(23, 23, 23, 0.318);
+    border-radius: 20px;
+    backdrop-filter: blur(1.5px);
+    -webkit-backdrop-filter: blur(1.5px);
+}
+
+.lead-text {
+    font-size: 3.5rem;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+
+
+.sublead-text {
+    font-size: 1.5rem;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    line-height: 2rem;
+    font-style: normal;
+    text-align: center;
+}
+
+@media (max-width: 540px) {
+    .lead-text {
+        font-size: 2.5rem;
+    }
+
+    .sublead-text {
+        font-size: 1.25rem;
+    }
+}
+
+footer {
+    background-color: black;
+    width: 100%;
+    color: white;
+    text-align: right;
+    padding-right: 25px;
+    font-family: "Azeret Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 1rem;
+}
+
+@media (max-width: 540px) {
+    footer {
+        font-size: 0.75rem;
+    }
+}
